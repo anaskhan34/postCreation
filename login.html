@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+    <div class="main-sectio">
+        <div class="box-section">
+            <div class="headContent">
+                <h2>Good to see you!</h2>
+                <p>Let's continue the journey</p>
+            </div>
+
+            <form>
+               
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" id="userEmail" placeholder="Enter your Email" autocomplete="email" required>
+                </fieldset>
+                <br> <br>
+                <fieldset>
+                    <legend>Password</legend>
+                    <input type="password" id="userPassword" placeholder="Enter your Password" required>
+                </fieldset>
+               <br> <br>
+                <button id="loginBtn" onclick="loginHandler(event)">Login</button>
+            </form>
+            <br> <br>
+            <p>want to Create an Account?  <a href="signup.html">Signup here</a></p>
+
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

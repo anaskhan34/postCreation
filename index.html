@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+<body>
+    <section id="postCreate" class="hidden">
+        <div id="postMain">
+            <!-- post header -->
+            <div id="postHeader">
+                <div id="createrName">
+                    <span>Created By <span>M. Anas Khan</span></span>
+                </div>
+
+                <div class="postHeadMain">
+                    <h2>Create Post</h2>
+                </div>
+
+                <div class="logOutBtn">
+                    <button id="logOutBtn" onclick="logOutHandler()">LogOut</button>
+                </div>
+            </div>
+
+            <div class="lineBr">
+                <hr>
+            </div>
+            <!-- post content -->
+            <div id="profileImage">
+                <img id="imgSrc" src="" alt="" width="100px" height="100px">
+                <div class="userNameBox">
+                    <h2>Hello! <span id="userNameDisplay"></span></h2>
+                </div>
+            </div>
+
+            <div id="postInput">
+                <textArea id="postContent" placeholder="Tell SomeThing About This Post"></textArea>
+                <input type="text" id="postImageUrl" placeholder="Enter image URL">
+                <button id="postBtn" onclick="postHandler()">Post</button>
+            </div>
+
+            <div id="postDiv"  >
+
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
+

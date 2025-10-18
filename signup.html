@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robot" content="index,follow">
+    <title>SignUp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+
+</head>
+
+<body>
+
+    <div class="main-sectio">
+        <div class="box-section">
+            <div class="headContent">
+                <h2>Welcome!</h2>
+                <p>Sign up to get started</p>
+            </div>
+
+            <form>
+                <fieldset>
+                    <legend>UserName</legend>
+                    <input type="text" id="userName" placeholder="Enter your Full Name" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" id="userEmail" placeholder="Enter your Email" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Password</legend>
+                    <input type="password" id="userPassword" placeholder="Enter your Password" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Confirm Password</legend>
+                    <input type="password" id="userCnfPassword" placeholder="Enter your Confirm Password" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Upload your Picture</legend>
+                    <input type="file" id="userImage" accept="image/*" required>
+                </fieldset>
+                <br>
+
+                <button id="signupBtn" onclick="signupHandler(event)">Sign Up</button>
+            </form>
+            <br>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
